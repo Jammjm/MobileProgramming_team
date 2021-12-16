@@ -4,4 +4,4 @@
 
   + <img width="440" alt="prove" src="https://user-images.githubusercontent.com/74909565/146406625-86315f97-d906-4e6d-a0f2-30db9ef48ddd.png">
 
-    + Project(map), notification, alarm manager is project file of my android studio application file
+    + Project(map), notification, alarm manager is my final project file of my android studio application file
