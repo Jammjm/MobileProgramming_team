@@ -3,7 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_glassbottle.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_home.xml" value="0.4276041666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_list.xml" value="0.3265625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_login.xml" value="0.3046875" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_main.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_map.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_metalcan.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_paper.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_pet.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_recycler_example.xml" value="0.3229166666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_signup.xml" value="0.3703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_styrofoam.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_vinly.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/activity_vinyl.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RecyclingWiki/app/src/main/res/layout/item.xml" value="0.3265625" />
       </map>
     </option>
   </component>
