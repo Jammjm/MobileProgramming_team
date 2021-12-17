@@ -77,7 +77,7 @@ class Notification : AppCompatActivity() {
             AlarmManager.INTERVAL_DAY, pendingIntent
         )
 
-        Toast.makeText(this, "Alarm se Succesesfuly", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Alarm set Succesesfuly", Toast.LENGTH_SHORT).show()
 
 
     }
