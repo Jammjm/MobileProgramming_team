@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="card_view" type="id" />
+    <item name="map" type="id" />
+    <item name="park_name" type="id" />
+    <item name="park_what" type="id" />
+</resources>
