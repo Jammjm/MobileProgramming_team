@@ -18,9 +18,13 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
         imageButton3.setOnClickListener{
+            val intent = Intent(this, Googlemap::class.java)
+            startActivity(intent)
 
         }
         imageButton4.setOnClickListener{
+            val intent = Intent(this, Myinfo::class.java)
+            startActivity(intent)
 
         }
     }

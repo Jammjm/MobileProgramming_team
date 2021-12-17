@@ -53,11 +53,12 @@ class LoginActivity : AppCompatActivity() {
 
         login_signup_btn.setOnClickListener {
             val intent = Intent(this, Signup::class.java)
-            startActivityForResult(intent,100)
+            startActivityForResult(intent, 100)
         }
 
         login_signin_btn.setOnClickListener {
             signIn(login_email_edittext.text.toString(), signup_password_edittext.text.toString())
+            login_sucess()
         }
     }
 
@@ -65,18 +66,35 @@ class LoginActivity : AppCompatActivity() {
 
 
         //var ref = FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance().currentUser!!.uid)
-        var df = FirebaseDatabase.getInstance()
+        var df = FirebaseFirestore.getInstance()
         Log.d("Jaemin", "$df")
-        df.getReference("Users").child(auth.uid.toString()).get().addOnSuccessListener { result ->
-            Log.d("Jaemin", "$result")
+
+        val uid = auth.uid.toString()
+        if(uid != null){
+            val docRef = df.collection("Users").document(auth.uid.toString())
+            docRef.get().addOnSuccessListener { document ->
+                if (document != null) {
+                    Log.d("Jaemin", "DocumentSnapshot data: ${document.data}")
+                } else {
+                    Log.d("Jaemin", "No such document")
+                }
+            }.addOnFailureListener { exception ->
+                Log.d("Jaemin", "get failed with ", exception)
+            }
         }
 
-
         val intent = Intent(this, HomeActivity::class.java)
+        intent.putExtra("isuser", 1)
         startActivity(intent)
     }
 
-    private fun createAccount(email: String, password: String, name:String, city: String, age: String) {
+    private fun createAccount(
+        email: String,
+        password: String,
+        name: String,
+        city: String,
+        age: String
+    ) {
 
         if (email.isNotEmpty() && password.isNotEmpty()) {
             auth?.createUserWithEmailAndPassword(email, password)
@@ -152,7 +170,7 @@ class LoginActivity : AppCompatActivity() {
                 Log.w(LoginActivity.TAG, "Google sign in failed", e)
             }
         }
-        if(resultCode == Activity.RESULT_OK) {
+        if (resultCode == Activity.RESULT_OK) {
             when (requestCode) {
                 100 -> {
                     val name = data?.getStringExtra("name").toString()
