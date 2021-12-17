@@ -38,6 +38,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/main_name"
                     android:layout_width="375dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="10dp"

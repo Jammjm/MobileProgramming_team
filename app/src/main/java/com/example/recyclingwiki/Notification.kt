@@ -9,11 +9,12 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
-import com.example.alarmmanager.AlarmReceiver
 import com.example.recyclingwiki.databinding.ActivityNotificationBinding
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
+import org.w3c.dom.Text
 import java.util.*
 
 class Notification : AppCompatActivity() {
@@ -29,6 +30,7 @@ class Notification : AppCompatActivity() {
         binding = ActivityNotificationBinding.inflate(layoutInflater)
         setContentView(binding.root)
         createNotificationChannel()
+
 
         binding.selectedTimeBtn.setOnClickListener {
             showTimePicker()
@@ -82,7 +84,6 @@ class Notification : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun showTimePicker() {
-
         picker = MaterialTimePicker.Builder()
             .setTimeFormat(TimeFormat.CLOCK_12H)
             .setHour(12)
@@ -90,21 +91,14 @@ class Notification : AppCompatActivity() {
             .setTitleText("Select Alram Time")
             .build()
 
-        picker.show(supportFragmentManager, "ITM")
+        picker.show(supportFragmentManager,"ITM")
 
-        picker.addOnPositiveButtonClickListener {
-            if (picker.hour > 12) {
-                binding.selectedTime.text =
-                    String.format("%02d", picker.hour - 12) + ":" + String.format(
-                        "%02d", picker.minute
-                    ) + "PM"
-            } else {
+        picker.addOnPositiveButtonClickListener{
 
-                String.format("%02d", picker.hour - 12) + ":" + String.format(
-                    "%02d", picker.minute
-                ) + "PM"
+                binding.selectedTime.text = "Selected:  " + String.format("%02d",picker.hour-12)+":"+String.format(
+                    "%02d",picker.minute
+                )
 
-            }
 
             calendar = Calendar.getInstance()
             calendar[Calendar.HOUR_OF_DAY] = picker.hour

@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclingWiki">
         <activity
+            android:name=".SelectNotificatetime"
+            android:exported="true" />
+        <activity
             android:name=".QNA"
             android:exported="true" />
         <activity
@@ -81,6 +84,8 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCyTVfaK5eBsVaAjNy22Ct7vfWpRnyoTOY" />
+
+        <receiver android:name=".AlarmReceiver" />
     </application>
 
 </manifest>

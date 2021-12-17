@@ -4,52 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/navy"
     android:orientation="vertical"
     tools:context=".Notification">
 
     <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Notification Setting"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/selectedTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/selectedTime"
-        android:layout_marginTop="200dp"
-        android:text="08 : 45 PM"
+        android:layout_marginTop="100dp"
+        android:text="Selected:   08 : 45"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="46dp"
-        />
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
     <Button
         android:id="@+id/selectedTimeBtn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="36dp"
         android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/aaa"
         android:text="Selected Time"
-        android:textSize="26dp"
-        />
+        android:textSize="26dp" />
 
     <Button
         android:id="@+id/setalarmBtn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="36dp"
         android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/aaa"
         android:text="Set alarm"
-        android:textSize="26dp"
-        />
+        android:textSize="26dp" />
 
 
     <Button
         android:id="@+id/cancelalarmBtn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="36dp"
         android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/aaa"
         android:text="Cancel Alarm"
-        android:textSize="26dp"
-        />
-
-
-
+        android:textSize="26dp" />
 
 
 </LinearLayout>

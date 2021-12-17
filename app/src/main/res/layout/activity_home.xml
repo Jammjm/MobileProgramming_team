@@ -35,19 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Hello User"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"/>
-            </LinearLayout>
+                android:orientation="horizontal"/>
 
             <LinearLayout
                 android:id="@+id/image_btn_layout"
@@ -70,7 +58,8 @@
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/school"
+                        android:backgroundTint="@color/navy"
+                        android:src="@drawable/category_icon"
                         tools:srcCompat="@tools:sample/avatars" />
 
                     <ImageButton
@@ -80,7 +69,8 @@
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/award"
+                        android:backgroundTint="@color/navy"
+                        android:src="@drawable/search_icon"
                         tools:srcCompat="@tools:sample/avatars" />
                 </LinearLayout>
 
@@ -88,6 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
+
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -97,7 +88,8 @@
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/certification"
+                        android:src="@drawable/map_icon"
+                        android:backgroundTint="@color/navy"
                         tools:srcCompat="@tools:sample/avatars" />
 
                     <ImageButton
@@ -107,7 +99,8 @@
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/mypage"
+                        android:backgroundTint="@color/navy"
+                        android:src="@drawable/myinfo_icon"
                         tools:srcCompat="@tools:sample/avatars" />
                 </LinearLayout>
             </LinearLayout>

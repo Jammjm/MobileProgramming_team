@@ -61,7 +61,6 @@ class LoginActivity : AppCompatActivity() {
 
         login_signin_btn.setOnClickListener {
             signIn(login_email_edittext.text.toString(), signup_password_edittext.text.toString())
-            login_sucess()
         }
     }
 

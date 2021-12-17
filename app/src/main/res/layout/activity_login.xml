@@ -103,16 +103,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:text="Signin" />
+                android:backgroundTint="@color/aaaa"
+                android:text="Signin"
+                android:textColor="@color/black"/>
 
             <Button
                 android:id="@+id/login_signup_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:text="Signup" />
+                android:backgroundTint="@color/aaaa"
+                android:text="Signup"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <com.google.android.gms.common.SignInButton
