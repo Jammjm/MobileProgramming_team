@@ -22,44 +22,81 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView5"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Vinyls" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/navy">
 
-            <TextView
-                android:id="@+id/textView7"
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vinyls"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Vinyl is also recycled." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView8"
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vinyl is also recycled."
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Plastic packing material, disposable plastic bag" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plastic packing material, disposable plastic bag"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
 
 
-            <ImageView
-                android:id="@+id/imageView3"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="127dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/vinly2" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView9"
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/vinly2"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*Remove foreign substances, such as emptying the contents and rinsing them with water, and discharge them." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*Put it in an envelope and discharge it so as not to scatter." />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Remove foreign substances, such as emptying the contents and rinsing them with water, and discharge them."
+                    android:textColor="@color/black"/>
 
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Put it in an envelope and discharge it so as not to scatter."
+                    android:textColor="@color/black"/>
+            </LinearLayout>
 
 
         </LinearLayout>

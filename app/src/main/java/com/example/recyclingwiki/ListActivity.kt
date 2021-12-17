@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_list.*
 import kotlinx.android.synthetic.main.item.*
 
@@ -91,6 +93,8 @@ class ListActivity : AppCompatActivity() {
 
              )
 
+    val list  = arrayListOf<items_list>()
+
 
 
 
@@ -99,12 +103,16 @@ class ListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
 
-        val list_item_Adapter = MainListAdapter(this, item_List)
+        val list = make_list()
+
+        val list_item_Adapter = MainListAdapter(this, list)
         mainListView.adapter = list_item_Adapter
 
        val layout = LinearLayoutManager(this)
        mainListView.layoutManager = layout
        mainListView.setHasFixedSize(true)
+
+
 
 
 
@@ -125,5 +133,33 @@ class ListActivity : AppCompatActivity() {
         })
 
 
+    }
+
+    fun make_list(): MutableList<items_list>{
+
+        val list  = arrayListOf<items_list>()
+
+        var df = FirebaseFirestore.getInstance()
+        var db = df.collection("Data").document("items")
+        db.get()
+            .addOnSuccessListener { document ->
+                if (document != null) {
+                    val len = document.data?.keys?.size
+                    for(i in 1..len!!){
+                        Log.d("Jaemin","$i")
+                        val str = document.data?.get(i.toString()).toString()
+                        val split = str.split(',')
+                        list.add(items_list(split[0], split[1], split[2].filter { !it.isWhitespace() }.toInt()))
+                        Log.d("Jaemin","for array size ${list.size}")
+                    }
+                } else {
+                    Log.d("Jaemin", "No such document")
+                }
+            }
+            .addOnFailureListener { exception ->
+                Log.d("Jaemin", "get failed with ", exception)
+            }
+        Log.d("Jaemin", "return list len = ${list.size}")
+    return list
     }
 }

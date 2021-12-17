@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Metalcan">
+    tools:context=".metalcan">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,23 +22,46 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView5"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Metal can, scrap metal." />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/navy">
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Metal can" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Metal can, scrap metal."
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView8"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="| Iron can, aluminum can (drink, liquor can, food can)" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Metal can"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="| Iron can, aluminum can (drink, liquor can, food can)"
+                    android:textColor="@color/teal_700"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,27 +73,43 @@
                     android:layout_width="79dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/can_image" />
+                    app:srcCompat="@drawable/can"
+                    />
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView9"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Remove foreign substances, such as emptying the contents and rinsing them with water, and discharge them." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:text="Remove metal cans and other materials such as plastic lids and discharge them." />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Remove foreign substances, such as emptying the contents and rinsing them with water, and discharge them."
+                    android:textColor="@color/black"/>
 
-            <TextView
-                android:id="@+id/textView11"
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:text="Remove metal cans and other materials such as plastic lids and discharge them."
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="| Other cans (butane gas, insecticide container, etc.)" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="| Other cans (butane gas, insecticide container, etc.)"
+                    android:textColor="@color/teal_700"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,14 +120,16 @@
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Remove the ingredients and release them." />
+                    android:text="Remove the ingredients and release them."
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="149dp"
                     android:layout_height="69dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/etccan" />
+                    app:srcCompat="@drawable/etccan"
+                    android:textColor="@color/black"/>
 
 
 
@@ -105,29 +146,32 @@
                     android:layout_width="174dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/gascan" />
+                    app:srcCompat="@drawable/gascan"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/textView18"
                     android:layout_width="218dp"
                     android:layout_height="match_parent"
-                    android:text="The gas container is discharged after removing the contents completely, such as pressing the nozzle in a well-ventilated place." />
+                    android:text="The gas container is discharged after removing the contents completely, such as pressing the nozzle in a well-ventilated place."
+                    android:textColor="@color/black"/>
 
 
             </LinearLayout>
 
 
-
-
-
-
-
-
-            <TextView
-                android:id="@+id/textView14"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Scrap metal." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Scrap metal."
+                    android:textColor="@color/red"/>
+            </LinearLayout>
 
 
             <LinearLayout
@@ -139,14 +183,16 @@
                     android:id="@+id/textView15"
                     android:layout_width="199dp"
                     android:layout_height="match_parent"
-                    android:text="| scrap metal (tools, wire, nails, etc.)" />
+                    android:text="| scrap metal (tools, wire, nails, etc.)"
+                    android:textColor="@color/black"/>
 
 
                 <TextView
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="| Non-ferrous metals (aluminum, stainless steel, etc.)" />
+                    android:text="| Non-ferrous metals (aluminum, stainless steel, etc.)"
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
 

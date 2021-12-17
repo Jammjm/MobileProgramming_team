@@ -48,7 +48,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mainListView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/search_filter"></androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>

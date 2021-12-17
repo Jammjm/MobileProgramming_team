@@ -22,17 +22,33 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView5"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Glass bottles." />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/navy">
 
-            <TextView
-                android:id="@+id/textView7"
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Glass bottles."
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Beverage bottle, other bottles." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beverage bottle, other bottles."
+                    android:textColor="@color/red"/>
+            </LinearLayout>
 
 
             <ImageView
@@ -42,42 +58,60 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/glassbottle" />
 
-            <TextView
-                android:id="@+id/textView8"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*Remove foreign substances, such as emptying the contents and rinsing them with water, and discharge them." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView9"
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Remove foreign substances, such as emptying the contents and rinsing them with water, and discharge them."
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*It discharges foreign substances such as cigarette butts without putting them in."
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Be careful not to break the glass bottle."
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*If a container for each color is installed and can be discharged for each color, separate it and discharge it."
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*If it is possible to remove the trademark because it is not attached with an adhesive, remove the trademark and discharge it."
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*It discharges foreign substances such as cigarette butts without putting them in." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*Be careful not to break the glass bottle." />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*If a container for each color is installed and can be discharged for each color, separate it and discharge it." />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*If it is possible to remove the trademark because it is not attached with an adhesive, remove the trademark and discharge it." />
-
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Deposit bottle." />
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deposit bottle."
+                    android:textColor="@color/red"/>
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -86,23 +120,32 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/guarrantebottle" />
 
-            <TextView
-                android:id="@+id/textView14"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*Return glass bottles subject to half-container deposits such as soju and beer to retail stores and get a refund on the deposit." />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*Check the bottle cap and label for a deposit refund statement" />
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Return glass bottles subject to half-container deposits such as soju and beer to retail stores and get a refund on the deposit."
+                    android:textColor="@color/black"/>
 
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="*Empty the contents. If there is foreign material such as cigarette butts, it will not be accepted." />
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Check the bottle cap and label for a deposit refund statement"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Empty the contents. If there is foreign material such as cigarette butts, it will not be accepted."
+                    android:textColor="@color/black"/>
+            </LinearLayout>
 
 
         </LinearLayout>

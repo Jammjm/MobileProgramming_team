@@ -11,7 +11,8 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         imageButton1.setOnClickListener{
-
+            val intent = Intent(this, category::class.java)
+            startActivity(intent)
         }
         imageButton2.setOnClickListener{
             val intent = Intent(this, ListActivity::class.java)

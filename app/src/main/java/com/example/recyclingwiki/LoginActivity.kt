@@ -13,6 +13,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.database.DataSnapshot
@@ -20,6 +22,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.QuerySnapshot
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -71,21 +74,34 @@ class LoginActivity : AppCompatActivity() {
 
         val uid = auth.uid.toString()
         if(uid != null){
-            val docRef = df.collection("Users").document(auth.uid.toString())
-            docRef.get().addOnSuccessListener { document ->
-                if (document != null) {
-                    Log.d("Jaemin", "DocumentSnapshot data: ${document.data}")
-                } else {
-                    Log.d("Jaemin", "No such document")
+            var docRef = auth.uid?.let { df.collection("Users").document(it) }
+
+            docRef = df.collection("Users").document("OzMfDLwNZiWPIjfgpjde")
+
+            var db = FirebaseFirestore.getInstance()
+            Log.d("Jaemin", "db")
+            db.collection("Users")
+                .get().addOnCompleteListener{
+                    if(it.isSuccessful){
+                        Log.d("Jaemin", "sucess")
+                        Log.d("Jaemin", "${it.result}")
+                        for(document in it.result!!){
+                            Log.d("Jaemin", document.data.getValue("name") as String)
+                        }
+                    }else{
+                        Log.d("Jaemin", "fail")
+                    }
                 }
-            }.addOnFailureListener { exception ->
-                Log.d("Jaemin", "get failed with ", exception)
-            }
+
+
+
+
         }
 
         val intent = Intent(this, HomeActivity::class.java)
         intent.putExtra("isuser", 1)
         startActivity(intent)
+        //finish()
     }
 
     private fun createAccount(

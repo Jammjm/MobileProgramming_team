@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".Paper">
+    tools:context=".paper">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,23 +22,46 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView5"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Paper,Carton" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/navy">
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Paper" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper,Carton"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView8"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="| newspaper" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="| newspaper"
+                    android:textColor="@color/teal_700"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +72,8 @@
                     android:id="@+id/textView9"
                     android:layout_width="274dp"
                     android:layout_height="82dp"
-                    android:text="Make sure you don't get wet, spread it out straight, stack it one by one, and bundle it out.  Avoid mixing vinyl-coated advertising papers, vinyls, and other dirt." />
+                    android:text="Make sure you don't get wet, spread it out straight, stack it one by one, and bundle it out.  Avoid mixing vinyl-coated advertising papers, vinyls, and other dirt."
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -60,11 +84,18 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView11"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="| Booklets, notes" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="| Booklets, notes"
+                    android:textColor="@color/teal_700"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,7 +106,8 @@
                     android:id="@+id/textView12"
                     android:layout_width="274dp"
                     android:layout_height="82dp"
-                    android:text="Remove vinyl coated covers, spring from notebooks, etc. and discharge them." />
+                    android:text="Remove vinyl coated covers, spring from notebooks, etc. and discharge them."
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -90,13 +122,21 @@
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="133dp"
-                app:srcCompat="@drawable/vinly" />
+                app:srcCompat="@drawable/vinly"
+                android:textColor="@color/black"/>
 
-            <TextView
-                android:id="@+id/textView13"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="| Boxes (corrugated cardboard box, etc.)" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="| Boxes (corrugated cardboard box, etc.)"
+                    android:textColor="@color/teal_700"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,7 +147,8 @@
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:text="Remove the plastic coating part, tape attached to the box, iron pin, etc., and press it to bundle and discharge it for easy transport." />
+                    android:text="Remove the plastic coating part, tape attached to the box, iron pin, etc., and press it to bundle and discharge it for easy transport."
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
 
@@ -127,7 +168,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Paper pack, paper cup." />
+                    android:text="Paper pack, paper cup."
+                    android:textColor="@color/red"/>
 
             </LinearLayout>
 
@@ -142,7 +184,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="| Sterilizing pack. Sterilizing pack." />
+                    android:text="| Sterilizing pack. Sterilizing pack."
+                    android:textColor="@color/teal_700"/>
             </LinearLayout>
 
             <ImageView
@@ -155,31 +198,43 @@
                 android:id="@+id/textView26"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="-Empty the contents, march it with water, press it down, put it in a bag, or bundle it up and discharge it." />
+                android:text="-Empty the contents, march it with water, press it down, put it in a bag, or bundle it up and discharge it."
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/textView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="- Remove paper packs such as straws and vinyls before discharging them." />
+                android:text="- Remove paper packs such as straws and vinyls before discharging them."
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/textView28"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="-Discharge it in the paper pack collection box so that it does not mix with ordinary paper." />
+                android:text="-Discharge it in the paper pack collection box so that it does not mix with ordinary paper."
+                android:textColor="@color/black"
+                />
 
             <TextView
                 android:id="@+id/textView29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="-If there is no collection box exclusively for paper packs, tie it with a string as much as possible to distinguish it from paper and discharge it to the paper collection box." />
+                android:text="-If there is no collection box exclusively for paper packs, tie it with a string as much as possible to distinguish it from paper and discharge it to the paper collection box."
+                android:textColor="@color/black"/>
 
-            <TextView
-                android:id="@+id/textView30"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="| paper cup" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="| paper cup"
+                    android:textColor="@color/teal_700"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -191,14 +246,16 @@
                     android:layout_width="303dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Empty the inside, rinse it with water, press it down, and put it in a bag." />
+                    android:text="Empty the inside, rinse it with water, press it down, and put it in a bag."
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:id="@+id/imageView8"
                     android:layout_width="81dp"
                     android:layout_height="40dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/papercup" />
+                    app:srcCompat="@drawable/papercup"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
 
