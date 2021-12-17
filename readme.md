@@ -1,6 +1,6 @@
 + Recycling wiki (Taehyeon Kwon, Jaemin Park)
 
-+ Project file link : https://drive.google.com/file/d/1SH0UkdPoxM-4qNDeuqgmGQUNXLbetCq0/view?usp=sharing
++ Project zipfile link : https://drive.google.com/file/d/1SH0UkdPoxM-4qNDeuqgmGQUNXLbetCq0/view?usp=sharing
 
   + TaeHyeon Kwon
 
