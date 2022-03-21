@@ -28,7 +28,7 @@
         “properties”: {  
         “name”: {“type”: ”string”} ,  
         “age” : {“type”: ”integer”} ,  
-         \\   }  
+         \ \   }  
         }  
 
 + 위와 같이 properties 내 추가를 통해 다른 데이터를 검증하는 것도 가능합니다.
